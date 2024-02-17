@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <title>Christine and Nolan</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+        <style type="text/css">
+        a {
+            text-decoration: none;
+        }
+        #ournames {
+            font-family: Parisienne, ui-serif;
+            font-size: 3em;
+        }
+        h3,h4 {
+            font-family: Parisienne;
+            font-size: 2em;
+        }
+        body {
+            text-align: center;
+            font-family: Quicksand, ui-sans-serif;
+            display: block;
+            font-size: 20px;
+        }
+        .time {
+            font-size: 24px;
+        }
+        .event {
+            font-size: 20px;
+        }
+        dl {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        dt {
+            width: 49%;
+            text-align: right;
+        }
+        dd {
+            margin-left: auto;
+            width: 49%;
+            text-align: left;
+        }
+        menu {
+            list-style: none;
+            display: flex;
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+        li {
+            width: 33%;
+        }
+        img {
+            width: 100%;
+        }
+        headpic {
+            margin-bottom: -30px;
+        }
+        div.signs {
+            margin: 5em;
+            max-width: 100%;
+            display: inline-block;
+        }
+        img.sign {
+            height: auto;
+            width: 40%;
+            margin: 1em;
+        }
+        
+        input + span {
+            padding-right: 30px;
+        }
+
+        input:invalid + span::after {
+            position: absolute;
+            content: "✖";
+            padding-left: 5px;
+        }
+
+        input:valid + span::after {
+            position: absolute;
+            content: "✓";
+            padding-left: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img id="headpic" src="./header.webp">
+        </header>
+        <h1>
+            <span id="ournames">Christine and Nolan</span>
+        </h1>
+        <h2>
+            <time datetime="2024-10-19">October 19, 2024</time> • Goshen, IN
+        </h2>
+        
+        <div id="nav">
+            <menu>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#venue">Venue</a></li>
+                <li><a href="#accomodations">Accomodations</a></li>
+            </menu>
+        </div>
+        <div id="schedule">
+            <hr />
+            <br />
+            <h3>Schedule</h3>
+            <dl>
+            <dt class="time">5:00pm</dt><dd class="event">Wedding</dd>
+            <br />
+            <dt class="time">6:00pm - 7:00pm</dt><dd class="event">Cocktail Hour</dd>
+            <br />
+            <dt class="time">7:00pm - 11:00pm</dt><dd class="event">Dinner and Reception</dd>
+            </dl>
+            <hr />
+        </div>
+        <div id="venue">
+            <h3>Venue</h3>
+            Bread and Chocolate
+            <br />
+            1100 Chicago Avenue, Goshen, IN, 46528
+            <br />
+            <br />
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2983.9203987557353!2d-85.8524503886221!3d41.592604771154676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8816edab54d4f2cb%3A0x8bd1b3ef59928883!2sBread%20%26%20Chocolate!5e0!3m2!1sen!2sus!4v1708204350315!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="directions">
+                <h4>Directions</h4>
+                From the parking lot, follow the signs into the Main Entrance of The Old Bag Factory and proceed to the <em>3rd floor</em> for the venue. There is an elevator inside the doors and to the right.
+                <br />
+                <br />
+                <div id="signs">
+                    <img class="sign" src="./parkingsign.jpeg" alt="sign for shops in The Old Bag Factory. The venue is on the 3rd floor.">
+                    <img class="sign" src="./mainsign.jpeg" alt="main entrance sign for The Old Bag Factory">
+                </div>
+            </div>
+            <hr />
+        </div>
+        <div id="accomodations">
+            <h3>Accomodations</h3>
+            There are a <a href="https://maps.app.goo.gl/UJSLNuuiV5Eb7AB37">variety of hotels</a> near Goshen.
+            <hr />
+        </div>
+        <div id="rsvp">
+            <h3>rsvp</h3>
+            <form name="rsvp" method="post" action="mailto:nolan@nbrubaker.com" enctype="text/plain">
+                <label for="name">Your name </label>
+                <input type="text" name="name" id="name" required />
+                <span class="validity"></span>
+                <br />
+                <label for="chicken">Number of chicken entrees </label>
+                <input type="text" name="chicken" id="chicken" maxlength=1 size=1 placeholder="0" pattern="^\d$" required />
+                <span class="validity"></span>
+                <br />
+                <label for="beef">Number of beef entrees </label>
+                <input type="text" name="beef" id="beef" maxlength=1 size=1 placeholder="0" pattern="^\d$" required />
+                <span class="validity"></span>
+                <br />
+                <button>Submit</button>
+            </form>
+        </div>
+    </body>
+    <footer>
+        <img src="./footer.webp">
+    </footer>
+</html>
