@@ -92,6 +92,27 @@
             content: "✓";
             padding-left: 5px;
         }
+        #initials {
+            margin-top: 100px;
+            font-weight: normal;
+            font-size: 62px;
+        }
+        hr {
+            width: 80%;
+            height: 5px;
+            border: none;
+            border-top: 3px double;
+            overflow: visible;
+        }
+        hr::after {
+            content: '♥️ ♥️ ♥️';
+            position: relative;
+            padding: 0 4px;
+            position: relative;
+            top: -13px;
+            color: transparent;
+            text-shadow: 0 0 0 #582848;
+        }
         </style>
     </head>
     <body>
@@ -133,7 +154,7 @@
             <br />
             <br />
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2983.9203987557353!2d-85.8524503886221!3d41.592604771154676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8816edab54d4f2cb%3A0x8bd1b3ef59928883!2sBread%20%26%20Chocolate!5e0!3m2!1sen!2sus!4v1708204350315!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2983.9203987557353!2d-85.8524503886221!3d41.592604771154676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8816edab54d4f2cb%3A0x8bd1b3ef59928883!2sBread%20%26%20Chocolate!5e0!3m2!1sen!2sus!4v1708204350315!5m2!1sen!2sus" width="800" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div id="directions">
                 <h4>Directions</h4>
                 From the parking lot, follow the signs into the Main Entrance of The Old Bag Factory and proceed to the <em>3rd floor</em> for the venue. There is an elevator inside the doors and to the right.
@@ -147,15 +168,28 @@
             <hr />
         </div>
         <div id="accomodations">
-            <h3>Accomodations</h3>
+            <h3>Guest Accomodations</h3>
             There are a <a href="https://maps.app.goo.gl/UJSLNuuiV5Eb7AB37">variety of hotels</a> near Goshen.
-            <hr />
+            <br />
+            Alternatively, you may enjoy <a href="https://www.airbnb.com/s/Goshen--IN/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2024-03-01&monthly_length=3&monthly_end_date=2024-06-01&price_filter_input_type=0&channel=EXPLORE&date_picker_type=calendar&checkin=2024-10-18&checkout=2024-10-20&adults=2&source=structured_search_input_header&search_type=filter_change">Airbnb</a> options near Goshen.
+            <br />
+            <br />
+        <hr />
+        </div>
+        <div id="placesToVisit">
+            <h3>Places to Visit</h3>
+        <hr />
         </div>
         <div id="rsvp">
             <h3 id="rsvp">r.s.v.p.</h3>
+            <!-- TODO: fix up form validation for the meals; make a small JS script to format it -->
             <form name="rsvp" method="post" action="mailto:nolan@nbrubaker.com" enctype="text/plain">
                 <label for="name">Your name </label>
                 <input type="text" name="name" id="name" required />
+                <span class="validity"></span>
+                <br />
+                <label for="guests">Number of guests </label>
+                <input type="text" name="guests" id="guests" maxlength=1 size=1 placeholder="0" pattern="^\d$" required />
                 <span class="validity"></span>
                 <br />
                 <label for="chicken">Number of chicken entrees </label>
@@ -175,6 +209,10 @@
         </div>
     </body>
     <footer>
+        <div id="initials">c&n</div>
+        <div class="neatline">
+            <p>10.19.2024</p>
+        </div>
         <img src="./footer.png">
     </footer>
 </html>
