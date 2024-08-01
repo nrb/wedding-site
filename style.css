@@ -26,13 +26,6 @@ body {
     font-size: 1.5em;
     background-color: #B0B8B0;
 }
-dl {
-}
-dt {
-    width: 49%;
-}
-dd {
-}
 div#nav {
     position: sticky;
     top: 1px;
