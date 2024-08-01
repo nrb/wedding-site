@@ -1,0 +1,3 @@
+- Christine's favorite places
+- Registry link on main page
+- About us on main page`
