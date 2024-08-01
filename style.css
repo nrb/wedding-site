@@ -81,6 +81,15 @@ img.sign {
     #ournames {
         font-size: 2em;
     }
+    hr::after {
+        top: -30px;
+    }
+}
+
+@media (min-width:1000px) {
+    hr::after {
+        top: -13px;
+    }
 }
 
 #initials {
@@ -97,10 +106,8 @@ hr {
 }
 hr::after {
     content: '♥️ ♥️ ♥️';
-    position: relative;
     padding: 0 4px;
     position: relative;
-    top: -13px;
     color: transparent;
     text-shadow: 0 0 0 #582848;
 }
