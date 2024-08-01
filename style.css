@@ -7,7 +7,6 @@ a:visited {
 }
 #ournames {
     font-family: Parisienne, ui-serif;
-    font-size: 96px;
     color: #203050;
 }
 h3,h4 {
@@ -83,10 +82,10 @@ img.sign {
         font-size: 3em;
     }
     h3,h4 {
-        font-size: 3em;
+        font-size: 2em;
     }
     #ournames {
-        font-size: 3em;
+        font-size: 2em;
     }
 }
 
