@@ -27,17 +27,11 @@ body {
     background-color: #B0B8B0;
 }
 dl {
-    display: flex;
-    flex-wrap: wrap;
 }
 dt {
     width: 49%;
-    text-align: right;
 }
 dd {
-    margin-left: auto;
-    width: 49%;
-    text-align: left;
 }
 div#nav {
     position: sticky;
