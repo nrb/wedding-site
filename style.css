@@ -73,6 +73,7 @@ img.sign {
     }
     #ournames {
         font-size: 2em;
+        word-spacing: 100vw;
     }
     hr::after {
         top: -30px;
