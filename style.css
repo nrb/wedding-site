@@ -89,21 +89,6 @@ img.sign {
     }
 }
 
-input + span {
-    padding-right: 30px;
-}
-
-input:invalid + span::after {
-    position: absolute;
-    content: "✖";
-    padding-left: 5px;
-}
-
-input:valid + span::after {
-    position: absolute;
-    content: "✓";
-    padding-left: 5px;
-}
 #initials {
     margin-top: 100px;
     font-weight: normal;
