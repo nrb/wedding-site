@@ -1,4 +1,1 @@
-- Add shiojiri garden to places to visit
 - Christine's favorite places
-- Add Hacienda
-- Potato Creek
